@@ -15,7 +15,24 @@ build-backend = "hatchling.build"
 
 [tool.uv]
 dev-dependencies = [
+    "pre-commit>=4.1.0",
     "pyright>=1.1.393",
     "pytest-cov>=6.0.0",
     "pytest>=8.3.4",
 ]
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[dependency-groups]
+dev = ["pytest-cov>=5.0.0", "pyright>=1.1.381"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.pyright]
+exclude = [".venv"]
+pythonVersion = "3.13"
+venvPath = "."
+venv = ".venv"

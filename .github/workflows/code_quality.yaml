@@ -34,9 +34,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      - run: uv run pytest -v --durations=0 --cov --cov-report=xml
+      - name: Run pytest
+        run: uv run pytest -v --durations=0 --cov --cov-report=xml --junitxml=junit.xml
       - name: Upload coverage report to codecov.io
         uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+      - name: Upload test results to codecov.io
+        uses: codecov/test-results-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
   build:
