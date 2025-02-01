@@ -24,9 +24,6 @@ dev-dependencies = [
 [tool.distutils.bdist_wheel]
 universal = true
 
-[dependency-groups]
-dev = ["pytest-cov>=5.0.0", "pyright>=1.1.381"]
-
 [tool.ruff]
 line-length = 100
 target-version = "py313"
