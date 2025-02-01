@@ -1,0 +1,6 @@
+name: pdf_split
+dependencies:
+  - pip
+  - python==3.12.8
+  - pip:
+    - -r requirements/requirements.txt
