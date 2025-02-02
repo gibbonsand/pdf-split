@@ -39,7 +39,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
   build:
     runs-on: ubuntu-latest
-    needs: [linting, formatting, type_consistency, tests]
+    needs: [linting, formatting, tests]
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
