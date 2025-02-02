@@ -13,6 +13,7 @@ repos:
     rev: v1.1.387
     hooks:
       - id: pyright
+        args: [ --verbose ]
   - repo: local
     hooks:
       - id: pytest
