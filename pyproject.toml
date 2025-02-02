@@ -32,6 +32,6 @@ target-version = "py313"
 
 [tool.pyright]
 exclude = [".venv"]
-pythonVersion = "3.13"
+pythonVersion = "3.12"
 venvPath = "."
 venv = ".venv"

@@ -22,7 +22,7 @@ def pdf_split(input_file_path: str, output_dir: str = c.OUTPUT_DIR, pages: list 
         pages (list): List of pages to extract from PDF file. Currently only supports extracting
                       all pages individually.
         Valid example input pages parameters:
-        - ['*']
+        - ["*"]
 
     Returns:
         None

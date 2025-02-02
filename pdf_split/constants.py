@@ -1,4 +1,4 @@
-"""Module containing the constant definitions for the pdf_ocr project"""
+"""Module containing the constant definitions for the pdf_split project"""
 
 # Pathing configuration
 LOGFILE_PATH = "/Users/andrewgibbons/Projects/logs/pdf-split/pdf-split.log"
